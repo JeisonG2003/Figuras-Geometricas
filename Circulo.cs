@@ -1,21 +1,22 @@
-// Clase que representa un círculo y guarda su radio.
+// Clase que modela un círculo y guarda su radio.
 public class Circulo
 {
-    private double radio; // Valor del radio del círculo
+    private double radio;  // Valor del radio del círculo
 
-    // Constructor: crea un círculo indicando su radio.
+    // Constructor: recibe el radio y lo asigna al objeto.
     public Circulo(double radio)
     {
         this.radio = radio;
     }
 
-    // Calcula el área usando π * radio²
+    // Método que calcula el área aplicando la expresión: π × radio².
     public double CalcularArea()
     {
-        return Math.PI * radio * radio;
+        return Math.PI * Math.Pow(radio, 2);
     }
 
-    // Calcula el perímetro usando 2 * π * radio
+    // Método para obtener el perímetro o circunferencia.
+    // Fórmula: perímetro = 2 × π × radio.
     public double CalcularPerimetro()
     {
         return 2 * Math.PI * radio;
